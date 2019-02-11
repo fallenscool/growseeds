@@ -1,0 +1,22 @@
+{
+  "name": "gulp4-simple",
+  "description": "Simple gulp4 package for front-end development",
+  "main": "index.js",
+  "authors": [
+    "n1ce"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

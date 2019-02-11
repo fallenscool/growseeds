@@ -1,0 +1,108 @@
+// Responsive breakpoints. "Include media" settings.
+
+$desktop: 1600px;
+$desktop-notebook: 1400px;
+$desktop-little: 1280px;
+$desktop-block: 1024px;
+$menu-tablet: 992px;
+$middle-tablet: 900px;
+$tablet: 768px;
+$portrait-tablet: 767px;
+$phone: 640px;
+$custom-phone: 600px;
+$big-phone: 577px;
+$little-phone: 480px;
+$small-phone: 420px;
+$extra-phone-big: 375px;
+$extra-phone: 320px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop + 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop-notebook {
+  @media (max-width: #{$desktop-notebook}) {
+    @content;
+  }
+}
+
+@mixin desktop-little {
+  @media (max-width: #{$desktop-little}) {
+    @content;
+  }
+}
+
+@mixin desktop-block {
+  @media (max-width: #{$desktop-block}) {
+    @content;
+  }
+}
+
+@mixin menu-tablet {
+  @media (max-width: #{$menu-tablet}) {
+    @content;
+  }
+}
+
+@mixin middle-tablet {
+  @media (max-width: #{$middle-tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin portrait-tablet {
+  @media screen and (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin phone {
+  @media screen and (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin custom-phone {
+  @media screen and (max-width: #{$custom-phone}) {
+    @content;
+  }
+}
+
+@mixin big-phone {
+  @media screen and (max-width: #{$big-phone}) {
+    @content;
+  }
+}
+
+@mixin little-phone {
+  @media screen and (max-width: #{$little-phone}) {
+    @content;
+  }
+}
+
+@mixin small-phone {
+  @media (max-width: #{$small-phone}) {
+    @content;
+  }
+}
+
+@mixin extra-phone-big {
+  @media (max-width: #{$extra-phone-big}) {
+    @content;
+  }
+}
+
+@mixin extra-phone {
+  @media (max-width: #{$extra-phone}) {
+    @content;
+  }
+}

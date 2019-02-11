@@ -1,0 +1,32 @@
+.site-width {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  // margin-right: -15px;
+  // margin-left: -15px;
+
+  &-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}

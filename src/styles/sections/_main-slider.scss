@@ -1,0 +1,24 @@
+.main-slider {
+  height: 100vh;
+
+  .slider-wrap {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .item-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

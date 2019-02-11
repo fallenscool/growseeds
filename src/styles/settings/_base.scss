@@ -4,7 +4,7 @@
 
 html {
   font-size: 10px;
-  font-family: $font-regular;
+  font-family: $font-family;
   color: $color-black;
 
 }
@@ -16,4 +16,20 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.title {
+  font-family: $font-mont-bold;
+  font-size: 7.2rem;
+  line-height: 9rem;
+}
+
+.section-title {
+  font-family: $font-mont-semibold;
+  font-size: 2.6rem;
+  line-height: 5rem;
+}
+
+.yellow {
+  color: $color-yellow;
 }

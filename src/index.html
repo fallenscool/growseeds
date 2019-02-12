@@ -9,102 +9,444 @@
   <title>Growseeds || Home</title>
 </head>
 
-<header>
+<body class="page">
+  <header>
 
-  <div class="site-width">
-    <div class="container-fluid">
-      <div class="row header-row">
+    <div class="site-width">
+      <div class="container-fluid">
+        <div class="row header-row">
 
-        <div class="header-logo">
-          <div class="logo">
-            <a href="">
-              <img src="assets/img/png/logo.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <nav class="header-nav">
-          <ul class="navigation">
-            <li class="nav-link"><a href="#">ассортимент</a>
-              <ul class="navigation-dropdown">
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-              </ul>
-            </li>
-            <li class="nav-link"><a href="#">уникальное предложение</a>
-              <ul class="navigation-dropdown">
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-              </ul>
-            </li>
-            <li class="nav-link"><a href="#">о компании</a>
-              <ul class="navigation-dropdown">
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-              </ul>
-            </li>
-            <li class="nav-link"><a href="#">карьера</a>
-              <ul class="navigation-dropdown">
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-              </ul>
-            </li>
-            <li class="nav-link"><a href="#">контакты</a>
-              <ul class="navigation-dropdown">
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-              </ul>
-            </li>
-            <li class="nav-link lang-selector"><a href="#">ru</a>
-              <ul class="navigation-dropdown">
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-                <li class="dropdown-link"><a href="#">Dropdown link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-
-      </div>
-    </div>
-  </div>
-
-</header>
-
-<main>
-
-  <section class="main-slider">
-    <div class="slider-wrap" id="mainSlider">
-
-      <div class="slider-item" style="background-image: url('assets/img/jpg/slide-1.jpg');">
-        <div class="item-content">
-          <div class="item-title">
-            <div class="title yellow">
-              <h1>Лучший посевной материал </h1>
+          <div class="header-logo">
+            <div class="logo">
+              <a href="">
+                <img src="assets/img/png/logo.png" alt="">
+              </a>
             </div>
           </div>
-          <div class="item-btn">
-            <div class="btn btn-primary">
-              <a href="">связаться с нами</a>
-            </div>
-          </div>
+
+          <nav class="header-nav">
+            <ul class="navigation">
+              <li class="nav-link"><a href="#">ассортимент</a>
+                <ul class="navigation-dropdown">
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                </ul>
+              </li>
+              <li class="nav-link"><a href="#">уникальное предложение</a>
+                <ul class="navigation-dropdown">
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                </ul>
+              </li>
+              <li class="nav-link"><a href="#">о компании</a>
+                <ul class="navigation-dropdown">
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                </ul>
+              </li>
+              <li class="nav-link"><a href="#">карьера</a>
+                <ul class="navigation-dropdown">
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                </ul>
+              </li>
+              <li class="nav-link"><a href="#">контакты</a>
+                <ul class="navigation-dropdown">
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                </ul>
+              </li>
+              <li class="nav-link lang-selector"><a href="#">ru</a>
+                <ul class="navigation-dropdown">
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                  <li class="dropdown-link"><a href="#">Dropdown link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
         </div>
       </div>
     </div>
-  </section>
 
-</main>
+  </header>
 
-<footer>
+  <main>
 
-</footer>
+    <section class="modal-feedback" id="feedback">
+      <div class="modal-wrapper">
+        <div class="modal-content">
+          <div class="btn-close" id="modalCls">
+            <div class="br br-1"></div>
+            <div class="br br-2"></div>
+          </div>
+          <form action="">
+            <div class="modal-info">
+              <p>Заполните форму и мы с удовольствием свяжемся с вами !</p>
+            </div>
+            <input type="text" name="name" id="name" placeholder="Ваше имя">
+            <input type="text" name="cont" id="cont" placeholder="Почта или номер телефона">
+            <textarea name="message" id="msg" rows="4" placeholder="Ваше сообщение"></textarea>
+            <input type="submit" value="Отправить">
+            <div class="modal-info">
+              <p>Или просто позвоните по номеру: +380 (68) 276 16 16</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-<body>
+    <section class="main-slider">
+      <div class="slider-wrap" id="mainSlider">
+
+        <div class="slider-item" style="background-image: url('assets/img/jpg/slide-1.jpg');">
+          <div class="item-content small-row">
+            <div class="item-title">
+              <div class="title yellow">
+                <h1>Лучший посевной материал </h1>
+              </div>
+            </div>
+            <div class="item-btn">
+              <div class="btn btn-primary modal-btn">
+                <div class="btn-content">
+                  <a href="#">связаться с нами</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-item" style="background-image: url('assets/img/jpg/slide-2.jpg');">
+          <div class="item-content small-row">
+            <div class="item-title">
+              <div class="title yellow">
+                <h1>Лучший посевной материал </h1>
+              </div>
+            </div>
+            <div class="item-btn">
+              <div class="btn btn-primary modal-btn">
+                <div class="btn-content">
+                  <a href="#">связаться с нами</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-item" style="background-image: url('assets/img/jpg/slide-3.jpg');">
+          <div class="item-content small-row">
+            <div class="item-title">
+              <div class="title yellow">
+                <h1>Лучший посевной материал </h1>
+              </div>
+            </div>
+            <div class="item-btn">
+              <div class="btn btn-primary modal-btn">
+                <div class="btn-content">
+                  <a href="#">связаться с нами</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="arrows-wrapper">
+        <div class="arrow arrow-prev">
+        </div>
+        <div class="arrow arrow-next">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="benefits">
+      <div class="site-width">
+        <div class="container-fluid">
+          <div class="row small-row">
+
+            <div class="benefit">
+              <div class="benefit-content">
+                <div class="benefit-number yellow">
+                  <span>93</span>
+                </div>
+                <div class="benefit-title">
+                  <h4>Счастливых клиента</h4>
+                </div>
+                <div class="benefit-desc">
+                  <p>Лучший посевной материал</p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-content">
+                <div class="benefit-number yellow">
+                  <span>124</span>
+                </div>
+                <div class="benefit-title">
+                  <h4>Счастливых клиента</h4>
+                </div>
+                <div class="benefit-desc">
+                  <p>Лучший посевной материал</p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-content">
+                <div class="benefit-number yellow">
+                  <span>93</span>
+                </div>
+                <div class="benefit-title">
+                  <h4>Счастливых клиента</h4>
+                </div>
+                <div class="benefit-desc">
+                  <p>Лучший посевной материал</p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit-content">
+                <div class="benefit-number yellow">
+                  <span>874</span>
+                </div>
+                <div class="benefit-title">
+                  <h4>Счастливых клиента</h4>
+                </div>
+                <div class="benefit-desc">
+                  <p>Лучший посевной материал</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-home">
+      <div class="site-width">
+        <div class="container-fluid">
+          <div class="row small-row">
+            <div class="col col-img">
+              <div class="img">
+                <img src="assets/img/png/about-img.png" alt="">
+              </div>
+            </div>
+            <div class="col col-desc">
+              <div class="desc-content">
+                <div class="section-title">
+                  <h4>О Компании Growseeds</h4>
+                </div>
+                <div class="section-info">
+                  <p>Група компаній AMG (Agro Marketing Group) працює в агросекторі з 2011 року. Основними видами
+                    діяльності є
+                    дистрибуція насіння, добрив та засобів захисту рослин, виробництво посівного матеріалу, надання
+                    послуг з контролю
+                    шкідників, продаж та фінансування сільгосптехніки, а також консалтингові послуги з оптимізації
+                    бізнесу в агросекторі.
+                    Молода та амбітна команда дотримується найкращих традицій минулого та впроваджує новітні досягнення
+                    в агробізнесі.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tms">
+      <div class="site-width">
+        <div class="container-fluid">
+          <div class="row tms-row">
+
+            <div class="col col-tm" style="background-image: url('assets/img/png/tm-1.png');">
+              <div class="tm-content">
+                <div class="content-block section-title">
+                  <h4>Євросем</h4>
+                </div>
+                <div class="content-block section-info">
+                  <p>Євросем — український виробник посівного матеріалу повного циклу, а також виробник мікродобрив
+                    Євростім та
+                    бактеріальних комплексів Євронорм.</p>
+                </div>
+                <div class="content-block section-link">
+                  <a href="">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-tm" style="background-image: url('assets/img/png/tm-2.png');">
+              <div class="tm-content">
+                <div class="content-block section-title">
+                  <h4>Євросем</h4>
+                </div>
+                <div class="content-block section-info">
+                  <p>Євросем — український виробник посівного матеріалу повного циклу, а також виробник мікродобрив
+                    Євростім та
+                    бактеріальних комплексів Євронорм.</p>
+                </div>
+                <div class="content-block section-link">
+                  <a href="">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-tm" style="background-image: url('assets/img/png/tm-3.png');">
+              <div class="tm-content">
+                <div class="content-block section-title">
+                  <h4>Євросем</h4>
+                </div>
+                <div class="content-block section-info">
+                  <p>Євросем — український виробник посівного матеріалу повного циклу, а також виробник мікродобрив
+                    Євростім та
+                    бактеріальних комплексів Євронорм.</p>
+                </div>
+                <div class="content-block section-link">
+                  <a href="">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assortment">
+      <div class="site-width">
+        <div class="container-fluid">
+          <div class="section-title">
+            <h3>Ассортимент</h3>
+            <div class="img">
+              <img src="assets/img/png/logo@2x.png" alt="">
+            </div>
+          </div>
+          <div class="row small-row">
+
+            <div class="assortment-item">
+              <div class="item-content">
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/img/png/plants.png" alt="">
+                  </div>
+                  <div class="img-hover">
+                    <img src="assets/img/png/plants-hover.png" alt="">
+                  </div>
+                </div>
+                <div class="item-name">
+                  <h4>семена кукурузы</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="assortment-item">
+              <div class="item-content">
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/img/png/corn.png" alt="">
+                  </div>
+                  <div class="img-hover">
+                    <img src="assets/img/png/corn-hover.png" alt="">
+                  </div>
+                </div>
+                <div class="item-name">
+                  <h4>семена кукурузы</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="assortment-item">
+              <div class="item-content">
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/img/png/protection.png" alt="">
+                  </div>
+                  <div class="img-hover">
+                    <img src="assets/img/png/protection-hover.png" alt="">
+                  </div>
+                </div>
+                <div class="item-name">
+                  <h4>семена кукурузы</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="assortment-item">
+              <div class="item-content">
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/img/png/raps.png" alt="">
+                  </div>
+                  <div class="img-hover">
+                    <img src="assets/img/png/raps-hover.png" alt="">
+                  </div>
+                </div>
+                <div class="item-name">
+                  <h4>семена кукурузы</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="assortment-item">
+              <div class="item-content">
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/img/png/sunflower.png" alt="">
+                  </div>
+                  <div class="img-hover">
+                    <img src="assets/img/png/sunflower-hover.png" alt="">
+                  </div>
+                </div>
+                <div class="item-name">
+                  <h4>семена кукурузы</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="assortment-item">
+              <div class="item-content">
+                <div class="item-img">
+                  <div class="img">
+                    <img src="assets/img/png/fertilizer.png" alt="">
+                  </div>
+                  <div class="img-hover">
+                    <img src="assets/img/png/fertilizer-hover.png" alt="">
+                  </div>
+                </div>
+                <div class="item-name">
+                  <h4>семена кукурузы</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row small-row info-row">
+            <div class="section-info">
+              <p>Хотите знать больше ? Обращайтесь ! Мы всегда рады помочь !</p>
+            </div>
+            <div class="btn-wrapper">
+              <div class="btn btn-secondary">
+                <div class="btn-content">
+                  <a href="#">перейти в магазин</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
   <script src="app.js"></script>
 </body>
 

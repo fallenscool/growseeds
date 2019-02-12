@@ -1,0 +1,39 @@
+form {
+
+  input,
+  textarea {
+    outline: none !important;
+    border-radius: 5px;
+    border: 1px solid $color-yellow;
+    padding: 8px;
+    font-family: $font-family;
+    color: $color-black;
+    font-size: 1.2rem;
+    color: $color-black;
+    transition: 0.1s all linear;
+
+    &::placeholder {
+      color: rgba($color-black, 0.5);
+    }
+
+    &:focus {
+      border: 1px solid $color-orange;
+    }
+
+    &[type=submit] {
+      background-color: transparent;
+      border: 0px;
+      font-family: $font-bold;
+      font-size: 1.2rem;
+      color: $color-yellow;
+      padding: 0;
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+    }
+  }
+
+  textarea {
+    resize: none;
+    max-width: 100%;
+  }
+}

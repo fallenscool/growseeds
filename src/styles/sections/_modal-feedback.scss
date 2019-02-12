@@ -1,0 +1,71 @@
+.modal-feedback {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: fixed;
+  transition: 0.3s all linear;
+  background-color: rgba($color-black, 0.58);
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+
+  .modal-wrapper {
+    width: 100%;
+    max-width: 400px;
+    background-color: $color-white;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    padding: 20px 50px;
+  }
+
+  .modal-content {
+    position: relative;
+  }
+
+  .modal-info {
+    padding: 10px 0;
+    font-family: $font-mont-semibold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,
+  textarea {
+    margin: 8px 0;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .br {
+      width: 15px;
+      height: 1px;
+      background-color: $color-yellow;
+      transform-origin: center;
+
+      &-1 {
+        transform: rotate(45deg);
+      }
+
+      &-2 {
+        margin-top: -1px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

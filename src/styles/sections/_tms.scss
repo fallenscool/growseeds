@@ -1,0 +1,50 @@
+.tms {
+  .tms-row {
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  .content-block {
+    z-index: 5;
+  }
+
+  .tm-content {
+    transition: all 0.3 linear;
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+  }
+
+  .col-tm {
+    position: relative;
+    flex: 0 0 33.3%;
+    padding: 60px 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.56;
+      background-color: $color-black;
+      transition: 0.3s all ease;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 0.85;
+        background-color: $color-white;
+      }
+
+      .tm-content {
+        color: $color-black;
+      }
+    }
+  }
+}

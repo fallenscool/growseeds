@@ -1,0 +1,24 @@
+.arrows-wrapper {
+  .arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: 1px solid $color-black;
+    top: 50vh;
+    cursor: pointer;
+
+    &-prev {
+      left: 40px;
+      border-top: 0px;
+      border-right: 0px;
+    }
+
+    &-next {
+      right: 40px;
+      border-bottom: 0px;
+      border-left: 0px;
+    }
+  }
+}

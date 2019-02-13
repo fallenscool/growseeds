@@ -1,0 +1,28 @@
+.callback {
+  .callback-row {
+    border: 1.5px solid $color-green;
+    border-radius: 5px;
+    padding: 45px 0;
+  }
+
+  .section-info {
+    font-family: $font-mont-light;
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .btn-wrap {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-content:after {
+    display: none;
+  }
+}

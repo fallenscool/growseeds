@@ -34,7 +34,19 @@ window.onload = function () {
       },
     })
   }
-
+  let newsSlider = $('#newsSlider');
+  if (newsSlider) {
+    newsSlider.slick({
+      prevArrow: $('.arrows-wrapper .arrow-prev'), // change arrow for custom
+      nextArrow: $('.arrows-wrapper .arrow-next'), // change arrow for custom
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      customPaging: function (slider, i) {
+        return '<div class="slider-dot"></div>';
+      },
+    })
+  }
   // work with modal
   let modalBtn = document.querySelectorAll('.modal-btn'); // get buttons to open modal
   if (modalBtn) { //check for exits

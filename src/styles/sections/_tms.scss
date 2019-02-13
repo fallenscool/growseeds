@@ -4,8 +4,16 @@
     border-radius: 5px;
   }
 
+
+
+  .section-title {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
   .content-block {
     z-index: 5;
+    padding-bottom: 0;
   }
 
   .tm-content {
@@ -19,6 +27,9 @@
     position: relative;
     flex: 0 0 33.3%;
     padding: 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

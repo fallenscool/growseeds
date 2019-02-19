@@ -6,6 +6,10 @@
 
   .row {
     justify-content: space-between;
+
+    @include desktop-block {
+      justify-content: center;
+    }
   }
 
   .form-title {
@@ -62,5 +66,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
+    @include desktop-block {
+      display: none;
+    }
   }
 }

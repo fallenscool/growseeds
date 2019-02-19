@@ -13,6 +13,15 @@
   .member-col {
     flex: 0 0 33.3%;
     padding: 30px;
+
+    @include phone {
+      flex: 0 0 50%;
+      padding: 10px;
+    }
+
+    @include little-phone {
+      flex: 0 0 100%;
+    }
   }
 
   .members-row {
@@ -58,7 +67,6 @@
 }
 
 .company-members {
-  padding-bottom: 120px;
 
   .members-row {
     padding-top: 0px;

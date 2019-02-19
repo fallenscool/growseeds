@@ -3,6 +3,14 @@
 
   .partner {
     flex: 0 0 20%;
+
+    @include tablet {
+      flex: 0 0 50%;
+    }
+
+    @include small-phone {
+      flex: 0 0 100%;
+    }
   }
 
   .partners-row {

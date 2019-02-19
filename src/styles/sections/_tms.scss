@@ -64,16 +64,5 @@
       background-color: $color-black;
       transition: 0.3s all ease;
     }
-
-    &:hover {
-      &:after {
-        opacity: 0.85;
-        background-color: $color-white;
-      }
-
-      .tm-content {
-        color: $color-black;
-      }
-    }
   }
 }

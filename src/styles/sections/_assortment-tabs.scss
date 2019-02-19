@@ -6,6 +6,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include big-phone {
+      padding: 0px;
+      text-align: center;
+    }
+
+    @include small-phone {
+      flex: 0 0 33.3%;
+      padding: 10px 0;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
   }
 
   .tab-title {
@@ -29,6 +41,11 @@
     font-size: 3.6rem;
     line-height: 5rem;
     text-align: center;
+
+    @include middle-tablet {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 
   .tab {
@@ -36,8 +53,19 @@
   }
 
   .tab-content {
-    height: 100vh;
-    max-height: 375px;
+    min-height: 375px;
+
+    @include desktop-block {
+      min-height: 300px;
+    }
+
+    @include middle-tablet {
+      min-height: 250px;
+    }
+
+    @include phone {
+      min-height: 300px
+    }
   }
 
   .tab-all {
@@ -50,6 +78,10 @@
       display: flex;
       justify-content: space-between;
 
+      @include phone {
+        flex-wrap: wrap;
+      }
+
       .col {
         flex: 0 0 25%;
         display: flex;
@@ -60,6 +92,10 @@
         background-position: center;
         position: relative;
         cursor: pointer;
+
+        @include phone {
+          flex: 0 0 50%;
+        }
 
         &:after {
           position: absolute;
@@ -87,6 +123,10 @@
 
   .tabs-navigation {
     padding-bottom: 40px;
+
+    @include phone {
+      padding-bottom: 20px;
+    }
   }
 
   .tab-one {
@@ -98,16 +138,36 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include little-phone {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     .col {
       padding: 20px 0;
+
+      @include phone {
+        padding: 0;
+      }
     }
 
     .col-list {
       flex: 0 0 25%;
       width: auto;
       border-right: 1px solid $color-yellow;
+
+      @include phone {
+        flex: 0 0 35%;
+      }
+
+      @include little-phone {
+        border-right: none;
+        border-bottom: 1px solid $color-yellow;
+        flex: 0 0 100%;
+        width: 100%;
+      }
     }
 
     .item {
@@ -116,6 +176,11 @@
       padding: 10px 0;
       transition: all 0.3s linear;
       cursor: pointer;
+
+      @include big-phone {
+        font-size: 1.6rem;
+        line-height: normal;
+      }
 
       &:hover {
         color: $color-orange;
@@ -129,15 +194,50 @@
 
   .content-block {
     display: flex;
+
+    @include desktop-block {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+
+    @include middle-tablet {
+      align-items: center;
+    }
+
+    @include little-phone {
+      padding: 0;
+    }
   }
 
   .info {
     font-size: 1.8rem;
     line-height: 3.6rem;
+
+    @include big-phone {
+      font-size: 1.6rem;
+      line-height: normal;
+    }
   }
 
   .content-info {
     padding-left: 10px;
+
+    @include desktop-block {
+      padding: 10px 0;
+    }
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include little-phone {
+      text-align: left;
+      flex: 0 0 70%;
+      align-items: flex-start;
+    }
   }
 
   .content-img {
@@ -146,11 +246,23 @@
     justify-content: center;
     width: 100%;
     max-width: 290px;
+
+    @include middle-tablet {
+      max-width: 200px;
+    }
+
+    @include little-phone {
+      flex: 0 0 30%;
+    }
   }
 
   .btn-wrapper {
     padding-top: 40px;
     width: auto;
     max-width: 240px;
+
+    @include desktop-block {
+      padding-top: 10px;
+    }
   }
 }

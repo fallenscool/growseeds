@@ -3,7 +3,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 10;
 
   .header-row {
     display: flex;
@@ -218,6 +218,8 @@ header {
     margin-left: -10px;
     transition: all 0.3s linear;
     transform: translateX(-100%);
+    background-color: rgba($color-white, 0.64);
+    border-bottom-right-radius: 5px;
 
     .navigation {
       flex-direction: column;

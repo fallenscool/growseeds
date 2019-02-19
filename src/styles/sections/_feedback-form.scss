@@ -1,6 +1,7 @@
 .feedback-form {
   .col {
-    flex: 0 0 50%;
+    max-width: 600px;
+    width: 100%;
   }
 
   .row {
@@ -35,6 +36,10 @@
     padding: 40px 60px;
     max-width: 600px;
     border-radius: 5px;
+
+    @include little-phone {
+      padding: 10px 15px;
+    }
   }
 
   .form-info {

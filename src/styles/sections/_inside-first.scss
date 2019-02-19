@@ -30,6 +30,10 @@
   .content-col {
     z-index: 5;
     text-align: center;
+
+    @include little-phone {
+      padding: 0;
+    }
   }
 
   .desc {

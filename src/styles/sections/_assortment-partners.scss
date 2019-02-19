@@ -1,0 +1,12 @@
+.assortment-partners {
+  padding-bottom: 0;
+
+  .partner {
+    flex: 0 0 20%;
+  }
+
+  .partners-row {
+    padding: 0;
+    border-bottom: 1px solid $color-orange;
+  }
+}

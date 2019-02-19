@@ -37,3 +37,84 @@ form {
     max-width: 100%;
   }
 }
+
+.custom-select {
+  font-family: $font-mont-medium;
+  font-size: 1.4rem;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 80px;
+  position: relative;
+
+  // &:after {
+  //   position: absolute;
+  //   right: 10px;
+  //   top: 8px;
+  //   transform: rotate(90deg);
+  //   content: url('assets/svg/arrow.svg');
+  //   filter: brightness(0);
+  // }
+
+  select {
+    display: none;
+  }
+
+  .select-selected {
+    border: none;
+    padding: 7px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all 0.3s ease;
+
+    &:after {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      transition: all 0.3s linear;
+      transform: rotate(90deg);
+      transform-origin: center;
+      content: url('assets/svg/arrow.svg');
+      filter: brightness(0);
+    }
+
+  }
+
+  .clicked-select {
+    border-color: $color-orange;
+
+    &:after {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .select-items {
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transition: 0.3s all ease-in-out;
+    z-index: 5;
+    border-radius: 5px;
+    border: 1px solid $color-orange;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .select-items div {
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+
+  .select-hide {
+    transform: scaleY(0);
+  }
+}

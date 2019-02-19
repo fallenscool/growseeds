@@ -1,0 +1,69 @@
+.agency {
+  position: relative;
+
+  .title-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-title {
+    padding-bottom: 50px;
+  }
+
+  .map-row {
+    padding-top: 35px;
+  }
+
+  .region {
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+      fill: $color-green;
+    }
+  }
+
+  .region-info {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+  }
+
+  .info-content {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+
+    .col {
+      width: auto;
+    }
+
+    .col-img {
+      padding: 0;
+    }
+  }
+
+  .info-title {
+    font-family: $font-mont-medium;
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .info-phones {
+    line-height: 1.3rem;
+    font-family: $font-mont-semibold;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding: 2.5px 0;
+    }
+  }
+}

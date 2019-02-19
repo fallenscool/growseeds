@@ -1,0 +1,66 @@
+.members {
+  padding-bottom: 60px;
+
+  .title-row {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .section-title {
+    padding-bottom: 35px;
+  }
+
+  .member-col {
+    flex: 0 0 33.3%;
+    padding: 30px;
+  }
+
+  .members-row {
+    padding-top: 60px;
+  }
+
+  .member-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .member-img {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .member-name {
+    padding-top: 25px;
+    font-family: $font-bold;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  .member-position {
+    font-family: $font-light;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding-bottom: 25px;
+  }
+
+  .icon-mail {
+    font-size: 2rem;
+    fill: $color-orange;
+  }
+
+  .btn-row {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.company-members {
+  padding-bottom: 120px;
+
+  .members-row {
+    padding-top: 0px;
+  }
+}

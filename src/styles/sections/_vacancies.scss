@@ -1,0 +1,117 @@
+.vacancies {
+  padding-bottom: 0;
+
+  .vacancy {
+    padding-bottom: 120px;
+  }
+
+  .row-info {
+    border-radius: 5px;
+    border: 1.5px solid $color-green;
+    padding: 55px 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+
+    p {
+      padding: 20px 0;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .vacancy-title {
+    background-color: $color-yellow;
+    font-family: $font-mont-semibold;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+
+  .vacancies-wrapper {
+    padding-top: 100px;
+  }
+
+  .info-wrapper {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    padding: 20px 0;
+
+    p {
+      text-transform: uppercase;
+    }
+
+    li {
+      &:before {
+        content: '-';
+        margin-right: 10px;
+      }
+
+    }
+  }
+
+  .vacancy-form {
+    padding-top: 40px;
+
+    form {
+      display: flex;
+      align-items: center;
+    }
+
+    .input-file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    input[type=submit] {
+      padding: 18px 17px;
+      font-family: $font-mont-bold;
+      font-size: 1.6rem;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+      color: $color-white;
+      background-color: $color-yellow;
+      box-shadow: $box-shadow;
+    }
+
+    .file-name {
+      font-size: 1.8rem;
+      margin-left: 15px;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: '';
+        top: 150%;
+        left: 0;
+        width: 100%;
+        height: 1.5px;
+        background-color: $color-yellow;
+      }
+    }
+
+    .file-btn,
+    .send-btn {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  }
+}

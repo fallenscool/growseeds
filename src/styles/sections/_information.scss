@@ -1,0 +1,22 @@
+.information {
+  padding-bottom: 0;
+
+  .section-info {
+    padding-bottom: 70px;
+    text-align: center;
+    border-bottom: 1px solid $color-orange;
+
+    p,
+    ul,
+    li {
+      padding-bottom: 25px;
+    }
+
+    li {
+      &:before {
+        content: url('assets/svg/checked.svg');
+        margin-right: 15px;
+      }
+    }
+  }
+}

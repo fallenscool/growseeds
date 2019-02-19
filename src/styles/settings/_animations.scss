@@ -7,3 +7,13 @@
     transform: rotateY(20deg);
   }
 }
+
+@keyframes arrow {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 15px;
+  }
+}

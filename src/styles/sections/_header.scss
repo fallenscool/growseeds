@@ -62,8 +62,13 @@ header {
     }
   }
 
+  .active-link {
+    color: $color-orange;
+  }
+
   .navigation-dropdown {
     position: absolute;
+    border: 1px solid transparent;
     top: 100%;
     width: calc(100% + 2px);
     height: auto;
@@ -105,5 +110,31 @@ header {
         width: 100%;
       }
     }
+  }
+}
+
+.inside-header {
+  background-color: rgba($color-white, 0.64);
+
+  .nav-link {
+    &:hover {
+      border-color: transparent;
+      background-color: rgba($color-white, 0.7);
+
+      .navigation-dropdown {
+        border-color: transparent;
+        background-color: rgba($color-white, 0.7);
+      }
+    }
+  }
+
+  .custom-select .clicked-select {
+    background-color: rgba($color-white, 0.7);
+    border-color: transparent;
+  }
+
+  .custom-select .select-items {
+    background-color: rgba($color-white, 0.7);
+    border-color: transparent;
   }
 }

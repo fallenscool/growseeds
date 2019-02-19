@@ -1,0 +1,61 @@
+.feedback-form {
+  .col {
+    flex: 0 0 50%;
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  input,
+  textarea {
+    margin: 15px 0;
+    font-size: 1.6rem;
+
+    &[type=submit] {
+      font-size: 1.8rem;
+    }
+  }
+
+  .form-col {
+    box-shadow: $box-shadow;
+    padding: 40px 60px;
+    max-width: 600px;
+    border-radius: 5px;
+  }
+
+  .form-info {
+    padding-top: 15px;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+
+    a {
+      transition: all 0.3s linear;
+      font-family: $font-bold;
+
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+
+  .img-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

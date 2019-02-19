@@ -5,6 +5,10 @@ footer {
   background-position: center;
   position: relative;
 
+  @include middle-tablet {
+    padding: 25px 0;
+  }
+
   &:after {
     z-index: 2;
     position: absolute;
@@ -19,12 +23,32 @@ footer {
   .footer-row {
     justify-content: space-between;
     flex-wrap: nowrap;
+
+    @include menu-tablet {
+      flex-wrap: wrap;
+
+    }
+
+    @include little-phone {
+      flex-direction: column-reverse;
+    }
   }
 
   .footer-logo {
     z-index: 5;
     padding-bottom: 30px;
     flex: 0 0 33.3%;
+
+    @include middle-tablet {
+      flex: 0 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include little-phone {
+      padding-bottom: 0;
+    }
   }
 
   .col {
@@ -35,12 +59,34 @@ footer {
     flex-direction: column;
     align-items: center;
 
+    @include little-phone {
+      align-items: flex-start;
+      padding: 10px 0;
+    }
+
     &:first-of-type {
       align-items: flex-start;
+
+      @include middle-tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+
+      @include little-phone {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
     }
 
     &:last-of-type {
       align-items: flex-end;
+
+      @include little-phone {
+        align-items: flex-start;
+      }
     }
   }
 
@@ -50,6 +96,11 @@ footer {
     justify-content: flex-start;
     filter: brightness(0) invert(1);
     width: 100%;
+
+    @include middle-tablet {
+      width: auto;
+      justify-content: center;
+    }
 
     a {
       width: 60%;
@@ -69,6 +120,11 @@ footer {
 
   .address-contact {
     padding-bottom: 50px;
+
+    @include middle-tablet {
+      padding-bottom: 10px;
+    }
+
   }
 
   .phone {
@@ -86,6 +142,10 @@ footer {
     display: flex;
     align-items: center;
     padding-top: 50px;
+
+    @include middle-tablet {
+      padding-top: 10px;
+    }
 
     .icon {
       transition: 0.3s all linear;
@@ -115,6 +175,14 @@ footer {
     font-size: 1.6rem;
     color: $color-white;
     transition: all 0.3s linear;
+
+    @include middle-tablet {
+      padding: 10px;
+    }
+
+    @include little-phone {
+      padding: 10px 0;
+    }
 
     &:hover {
       color: $color-orange;

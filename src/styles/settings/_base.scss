@@ -8,6 +8,14 @@ html {
   font-family: $font-family;
   color: $color-black;
 
+  @include middle-tablet {
+    font-size: 9px;
+  }
+
+  @include phone {
+    font-size: 8px;
+  }
+
 }
 
 img {
@@ -21,12 +29,25 @@ a {
 
 section {
   padding-bottom: 120px;
+
+  @include middle-tablet {
+    padding-bottom: 60px;
+  }
+
+  @include phone {
+    padding-bottom: 30px;
+  }
 }
 
 .title {
   font-family: $font-mont-bold;
   font-size: 7.2rem;
   line-height: 9rem;
+
+  @include little-phone {
+    font-size: 5rem;
+    line-height: normal;
+  }
 }
 
 .section-title {

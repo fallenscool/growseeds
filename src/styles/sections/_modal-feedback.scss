@@ -19,6 +19,11 @@
     border-radius: 5px;
     box-shadow: $box-shadow;
     padding: 20px 50px;
+
+    @include small-phone {
+      padding: 20px;
+      max-width: 300px;
+    }
   }
 
   .modal-content {

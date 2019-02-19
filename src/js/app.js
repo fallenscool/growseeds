@@ -18,6 +18,64 @@ function toggleModal(id) {
 
 window.onload = function () {
 
+  $('.count').each(function () { //for each element with class 'count' set animation
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 3000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now));
+      }
+    });
+  });
+
+  let burgerBtn = document.querySelector('.burger-btn');
+  if (burgerBtn) {
+    burgerBtn.addEventListener('click', function () {
+      this.classList.toggle('opened');
+      this.parentNode.querySelector('.burger-wrapper').classList.toggle('menu-opened');
+    })
+  }
+
+  //mobile adaptive for navigation in header
+  let headerWr = document.querySelector('.header-row');
+  if (headerWr) {
+
+    let langSel = headerWr.querySelector('.custom-select');
+
+    let burgerWr = document.createElement('div');
+    burgerWr.classList.add('burger-wrapper');
+
+
+    if (window.outerWidth <= 900) {
+      headerWr.appendChild(langSel);
+      langSel.classList.add('select-mobile');
+      headerWr.appendChild(burgerWr);
+      burgerWr.appendChild(headerWr.querySelector('.header-nav .navigation'));
+    }
+
+    window.addEventListener('resize', function () {
+      if (window.outerWidth <= 900) {
+        if (langSel.parentNode.classList.contains('navigation')) {
+          headerWr.appendChild(langSel);
+          langSel.classList.add('select-mobile');
+          headerWr.appendChild(burgerWr);
+          burgerWr.appendChild(headerWr.querySelector('.header-nav .navigation'));
+        }
+      } else {
+        if (!langSel.parentNode.classList.contains('navigation')) {
+          langSel.classList.remove('select-mobile');
+          headerWr.querySelector('.navigation').appendChild(langSel);
+          headerWr.querySelector('.header-nav').appendChild(burgerWr.querySelector('.navigation'));
+          headerWr.removeChild(burgerWr);
+        }
+      }
+    })
+
+  }
+
+
   let page = document.querySelector('.page'); // get body.page
   if (page) { //check for exist
     page.style.opacity = 1; // smooth fade in all page when all DOM loaded
@@ -48,6 +106,12 @@ window.onload = function () {
       customPaging: function (slider, i) {
         return '<div class="slider-dot"></div>';
       },
+      responsive: [{
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 1,
+        }
+      }]
     })
   }
   // work with modal

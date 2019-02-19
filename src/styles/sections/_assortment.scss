@@ -13,6 +13,10 @@
 
   .small-row {
     padding-top: 50px;
+
+    @include tablet {
+      padding-top: 0px;
+    }
   }
 
   .assortment-item {
@@ -21,6 +25,17 @@
     justify-content: center;
     padding: 35px 0;
     cursor: pointer;
+
+    @include phone {
+      flex: 0 0 50%;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    @include small-phone {
+      flex: 0 0 100%;
+      padding: 5px 0;
+    }
 
     &:hover {
       .item-content {
@@ -46,10 +61,18 @@
 
     &:nth-child(3n+1) {
       justify-content: flex-start;
+
+      @include phone {
+        justify-content: center;
+      }
     }
 
     &:nth-child(3n+3) {
       justify-content: flex-end;
+
+      @include phone {
+        justify-content: center;
+      }
     }
   }
 
@@ -110,5 +133,9 @@
     font-family: $font-mont-medium;
     font-size: 2.4rem;
     line-height: 3.6rem;
+
+    @include tablet {
+      text-align: center;
+    }
   }
 }

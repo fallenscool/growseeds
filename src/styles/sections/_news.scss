@@ -3,6 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include big-phone {
+      flex-direction: column;
+    }
   }
 
   .slider-wrap {
@@ -20,6 +24,14 @@
     background-color: $color-green;
     border-radius: 5px;
     max-width: 250px;
+
+    @include middle-tablet {
+      max-width: 500px;
+    }
+
+    @include little-phone {
+      width: 80%;
+    }
   }
 
   .slide-content {
@@ -51,6 +63,10 @@
     max-height: 60px;
     overflow: hidden;
     margin: 20px 0;
+
+    @include extra-phone {
+      max-height: 80px;
+    }
   }
 
   .slide-date {
@@ -60,6 +76,10 @@
     font-size: 1.3rem;
     line-height: 2.4rem;
     font-style: italic;
+
+    @include middle-tablet {
+      padding-top: 0px;
+    }
   }
 
   .slide-link {
@@ -104,10 +124,18 @@
 
     .arrow-next {
       right: -50px;
+
+      @include desktop-block {
+        right: 0;
+      }
     }
 
     .arrow-prev {
       left: -50px;
+
+      @include desktop-block {
+        left: 0;
+      }
     }
   }
 }

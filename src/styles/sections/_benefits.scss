@@ -4,6 +4,12 @@
   width: 100%;
   position: absolute;
 
+  @include phone {
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
 
   .benefit {
     flex: 0 0 25%;
@@ -11,6 +17,22 @@
     transform-origin: center;
     transition: all 0.3s ease;
     cursor: pointer;
+
+    @include middle-tablet {
+      padding: 0 10px;
+    }
+
+    @include phone {
+      flex: 0 0 50%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include extra-phone {
+      flex: 0 0 100%;
+    }
 
     &:hover {
       animation: benefit 0.3s ease infinite;
@@ -25,6 +47,14 @@
     background-color: $color-white;
     padding: 10px 20px;
     min-height: 250px;
+
+    @include middle-tablet {
+      min-height: 200px;
+    }
+
+    @include phone {
+      max-width: 180px;
+    }
   }
 
   .benefit-number {

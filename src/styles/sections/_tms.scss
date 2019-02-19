@@ -2,6 +2,14 @@
   .tms-row {
     overflow: hidden;
     border-radius: 5px;
+
+    @include desktop-block {
+      flex-wrap: nowrap;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
 
@@ -33,6 +41,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include desktop-block {
+      padding: 0;
+      min-height: 250px;
+      height: auto;
+    }
+
+    @include little-phone {
+      min-height: 180px;
+    }
 
 
     &:after {

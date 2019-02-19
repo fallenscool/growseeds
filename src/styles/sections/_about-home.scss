@@ -1,12 +1,29 @@
 .about-home {
   margin-top: 230px;
 
+  @include phone {
+    margin-top: 30px;
+  }
+
+  .img {
+    @include phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+  }
+
   .col {
     flex: 0 0 50%;
   }
 
   .small-row {
     align-items: center;
+
+    @include phone {
+      flex-direction: column;
+    }
   }
 }
 

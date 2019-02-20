@@ -33,10 +33,6 @@
     @include extra-phone {
       flex: 0 0 100%;
     }
-
-    &:hover {
-      animation: benefit 0.3s ease infinite;
-    }
   }
 
   .benefit-content {

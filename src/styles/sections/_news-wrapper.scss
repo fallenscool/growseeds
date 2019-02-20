@@ -5,6 +5,14 @@
     justify-content: space-between;
     padding: 45px 0;
 
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include little-phone {
+      padding: 15px 0;
+    }
+
     &:first-of-type {
       padding-top: 0;
     }
@@ -17,6 +25,17 @@
       flex: 0 0 50%;
       width: auto;
       padding: 0;
+
+    }
+
+    .col-info {
+      @include desktop-block {
+        padding-left: 20px;
+      }
+
+      @include tablet {
+        padding-left: 0;
+      }
     }
 
     .col-img {
@@ -26,6 +45,12 @@
       background-color: $color-green;
       max-width: 510px;
       border-radius: 5px;
+
+      @include tablet {
+        max-width: unset;
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+      }
     }
 
     .img {
@@ -35,6 +60,10 @@
         height: 100%;
         max-width: 100%;
         width: auto;
+
+        @include extra-phone-big {
+          height: auto;
+        }
       }
     }
 
@@ -80,6 +109,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include phone {
+      padding-top: 40px;
+    }
   }
 
   .pagination {

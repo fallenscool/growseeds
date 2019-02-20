@@ -3,6 +3,14 @@
 
   .vacancy {
     padding-bottom: 120px;
+
+    @include middle-tablet {
+      padding-bottom: 60px;
+    }
+
+    @include little-phone {
+      padding-bottom: 30px;
+    }
   }
 
   .row-info {
@@ -16,8 +24,20 @@
     font-size: 1.8rem;
     line-height: 3.6rem;
 
+    @include phone {
+      padding: 20px;
+    }
+
+    @include small-phone {
+      padding: 10px;
+    }
+
     p {
       padding: 20px 0;
+
+      @include phone {
+        padding: 10px 0;
+      }
 
       &:first-of-type {
         padding-top: 0;
@@ -62,6 +82,14 @@
 
   .vacancy-form {
     padding-top: 40px;
+
+    @include middle-tablet {
+      padding-top: 20px;
+    }
+
+    @include little-phone {
+      padding-top: 0;
+    }
 
     form {
       display: flex;

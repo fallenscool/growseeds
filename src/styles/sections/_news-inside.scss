@@ -1,6 +1,14 @@
 .news-inside {
   padding-top: 120px;
 
+  @include middle-tablet {
+    padding-top: 100px;
+  }
+
+  @include little-phone {
+    padding-top: 80px;
+  }
+
   .small-row {
     display: flex;
     flex-direction: column;
@@ -30,6 +38,11 @@
     color: $color-gray;
     line-height: 2.6rem;
     padding: 15px 0;
+
+    @include little-phone {
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
 
   .status {
@@ -44,6 +57,10 @@
   .share-block {
     display: flex;
     align-items: center;
+
+    @include little-phone {
+      padding-top: 10px;
+    }
 
     .icon {
       fill: $color-green;
@@ -79,6 +96,10 @@
     line-height: 3.6rem;
     text-transform: uppercase;
     padding: 15px 0;
+
+    @include extra-phone-big {
+      text-align: center;
+    }
   }
 
   .item-info {

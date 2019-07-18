@@ -16,7 +16,18 @@ function toggleModal(id) {
   }
 }
 
+// let preloader = document.querySelector('.preloader'); // get body.page
+// if (preloader) {
+//   preloader.querySelector('.preloader-content').style.opacity = '1';
+// }
+
 window.onload = function () {
+  // setTimeout(function () {
+  //   preloader.style.opacity = '0';
+  //   setTimeout(function () {
+  //     preloader.style.zIndex = '-1';
+  //   }, 1500)
+  // }, 2000)
 
   $('.count').each(function () { //for each element with class 'count' set animation
     $(this).prop('Counter', 0).animate({
@@ -75,7 +86,6 @@ window.onload = function () {
 
   }
 
-
   let page = document.querySelector('.page'); // get body.page
   if (page) { //check for exist
     page.style.opacity = 1; // smooth fade in all page when all DOM loaded
@@ -87,6 +97,8 @@ window.onload = function () {
       prevArrow: $('.arrows-wrapper .arrow-prev'), // change arrow for custom
       nextArrow: $('.arrows-wrapper .arrow-next'), // change arrow for custom
       dots: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
       slidesToShow: 1,
       slidesToScroll: 1,
       customPaging: function (slider, i) {

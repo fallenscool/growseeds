@@ -78,10 +78,6 @@ section {
   color: $color-yellow;
 }
 
-.page {
-  opacity: 0;
-  transition: 0.3s all ease;
-}
 
 .small-row {
   max-width: 1000px;
@@ -91,4 +87,42 @@ section {
 
 .text-center {
   text-align: center;
+}
+
+.preloader {
+  transition: 1.5s all ease;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-white;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .preloader-img {
+    width: 100%;
+  }
+
+  .preloader-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 80%;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+  }
+
+  .preloader-name {
+    padding-top: 35px;
+    font-family: $font-mont-bold;
+    font-size: 7.2rem;
+    text-transform: uppercase;
+    color: $color-yellow;
+  }
 }
